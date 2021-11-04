@@ -1,0 +1,85 @@
+div.app-container {
+  margin: 30px;
+}
+div.row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+div.col-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+div.col1-title {
+  display: flex;
+  justify-content: center;
+}
+div.col1-container {
+  margin-left: 10px;
+  background-color: var(--color, #fff);
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-right: 10px;
+  height: 100px;
+}
+div.col2-container {
+  margin-left: 10px;
+  background-color: var(--approximateColor, #fff);
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-right: 10px;
+  height: 100px;
+}
+div.input-container {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
+input {
+  background: #eee;
+  padding: 6px 12px;
+  margin: 15px 5px 10px;
+  display: inline-block;
+  border: 2px solid currentcolor;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgray);
+}
+input:invalid:hover {
+  background: #ddd;
+}
+input:hover {
+  background: #ddd;
+}
+input:focus {
+  background: #ccc;
+}
+button {
+  background-color: '#3f51b5';
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: 0;
+  text-transform: uppercase;
+  margin: 10px 0px;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px lightgray;
+  transition: ease background-color 250ms;
+}
+button:hover {
+  background-color: '#283593';
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.1;
+}
