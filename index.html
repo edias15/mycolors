@@ -13,12 +13,10 @@
         <div class="row-container">
           <div class="col-container">
             <div class="col1-title">
-              <p>Actual</p>
+              <strong class="actual">Actual</strong>
             </div>
-            <div class="col1-container">
-              <h2 class="name-container">
-                {nameColor}
-              </h2>
+            <div id='card-1' class="col1-container">
+              <h2 class="font-card-1" id="name-container"/>
             </div>
             <div class="input-container">
               <input
@@ -26,9 +24,10 @@
               id="hexColor"
               type="text"
               required
-              maxlength="7"
+              autofocus
+              maxlength="6"
               minlength="4"
-              pattern="^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+              pattern="^{#}([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
               placeholder="Hexa code"
               />
               <input
@@ -44,20 +43,31 @@
           </div>
           <div class="col-container">
             <div class="col1-title">
-              <p>Nearest</p>
+              <strong class="nearest">Nearest</strong>
             </div>
-            <div class="col2-container">
-              <h2 class="name-container">
-                {approximateColorName}
-              </h2>
+            <div id='card-2' class="col2-container">
+              <h2 class="font-card-2" id="name-container-nearest"/>
             </div>
             <div class="button-container">
-              <button on:click={handleSave} disabled={found} theme="blue">Save</button>
+              <button id="button" onclick="handleButton()" ></button>
             </div>
           </div>
         </div>
       </div>
     </form>
+    <div id="myProgress">
+      <div id="myBar"></div>
+      <span id="myMsg">Searching in database</span>
+    </div>
   </body>
   <script src="./renderer.js"></script>
+  <script type="text/javascript" src="ntc.js"></script>
+
+  <script type="text/javascript">
+    const n_match  = ntc.name(document.getElementById("hexColor").value);
+    const n_rgb = n_match[0]; // This is the RGB value of the closest matching color
+    const n_name = n_match[1]; // This is the text string for the name of the match
+    const n_exactmatch = n_match[2]; // True if exact color match, False if close-match
+//    alert(n_match);
+</script>
 </html>
