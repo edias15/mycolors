@@ -694,11 +694,6 @@ boolean@^3.0.1:
   resolved "https://registry.yarnpkg.com/boolean/-/boolean-3.1.4.tgz#f51a2fb5838a99e06f9b6ec1edb674de67026435"
   integrity sha512-3hx0kwU3uzG6ReQ3pnaFQPSktpBw6RHN3/ivDKEuU8g1XSfafowyvDnadjv1xp8IZqhtSukxlwv9bF6FhX8m0w==
 
-bootstrap@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.0.0.tgz#97635ac0e0d6cb466700ebf0fd266bfabf352ed2"
-  integrity sha512-tmhPET9B9qCl8dCofvHeiIhi49iBt0EehmIsziZib65k1erBW1rHhj2s/2JsuQh5Pq+xz2E9bEbzp9B7xHG+VA==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2482,13 +2477,6 @@ loud-rejection@^1.0.0:
     currently-unhandled "^0.4.1"
     signal-exit "^3.0.0"
 
-lowdb@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/lowdb/-/lowdb-3.0.0.tgz#c10ab4e7eb86f1cbe255e35e60ffb0c6f42049e0"
-  integrity sha512-9KZRulmIcU8fZuWiaM0d5e2/nPnrFyXkeXVpqT+MJS+vgbgOf1EbtvgQmba8HwUFgDl1oeZR6XqEJnkJmQdKmg==
-  dependencies:
-    steno "^2.1.0"
-
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
@@ -3790,11 +3778,6 @@ ssri@^8.0.0, ssri@^8.0.1:
   integrity sha512-97qShzy1AiyxvPNIkLWoGua7xoQzzPjQ0HAH4B0rWKo7SZ6USuPcrUiAFrws0UH8RrbWmgq3LMTObhPIHbbBeQ==
   dependencies:
     minipass "^3.1.1"
-
-steno@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/steno/-/steno-2.1.0.tgz#05a9c378ce42ed04f642cda6fcb41787a10e4e33"
-  integrity sha512-mauOsiaqTNGFkWqIfwcm3y/fq+qKKaIWf1vf3ocOuTdco9XoHCO2AGF1gFYXuZFSWuP38Q8LBHBGJv2KnJSXyA==
 
 string-width@^1.0.1:
   version "1.0.2"

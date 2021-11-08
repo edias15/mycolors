@@ -58,7 +58,8 @@ ipcRenderer.on('color-name-reply', (event, arg) => {
     document.getElementById('button').innerText = 'SAVE'
     const n_match = ntc.name(hex);
     const n_name = n_match[1];
-    document.getElementById('name-container-nearest').innerHTML = n_match[0] + ' - ' + n_name
+    const hexClosest = String(n_match[0]).substring(1);
+    document.getElementById('name-container-nearest').innerHTML = hexClosest + ' - ' + n_name
     document.getElementById('card-2').style.backgroundColor = n_match[0]
     document.getElementById('nameInput').disabled = false;
     document.getElementById('nameInput').focus()

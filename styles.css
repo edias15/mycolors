@@ -24,6 +24,13 @@ div.col1-container {
   margin-right: 10px;
   height: 100px;
 }
+div.col2-container {
+  margin-left: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-right: 10px;
+  height: 100px;
+}
 strong.actual {
   color: black;
   font-size: 30px;
@@ -35,23 +42,16 @@ strong.nearest {
 h2.font-card-1 {
   display: flex;
   padding: 20px 20px;
-  color: white;
+  color: wheat;
   mix-blend-mode: difference;
   justify-content: space-around;
 }
-h2.font-card-2:after {
+h2.font-card-2 {
   display: flex;
   padding: 20px 20px;
-  color: white;
+  color: wheat;
   mix-blend-mode: difference;
   justify-content: space-around;
-}
-div.col2-container {
-  margin-left: 10px;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  margin-right: 10px;
-  height: 100px;
 }
 div.input-container {
   display: flex;
@@ -84,11 +84,18 @@ input:hover {
 input:focus {
   background: #ccc;
 }
+div.button-container {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: space-around;
+}
 button {
+  display: flex;
+  align-content: flex-end;
+  padding: 10px 20px;
   background-color: '#3f51b5';
   display: none;
   color: black;
-  padding: 5px 15px;
   border-radius: 5px;
   outline: 0;
   text-transform: uppercase;
