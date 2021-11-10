@@ -61,6 +61,7 @@ ipcRenderer.on('color-name-reply', (event, arg) => {
     const hexClosest = String(n_match[0]).substring(1);
     document.getElementById('name-container-nearest').innerHTML = hexClosest + ' - ' + n_name
     document.getElementById('card-2').style.backgroundColor = n_match[0]
+    document.getElementById('card-1').style.backgroundColor = '#' + document.getElementById('hexColor').value
     document.getElementById('nameInput').disabled = false;
     document.getElementById('nameInput').focus()
     document.getElementById('nameInput').select()
